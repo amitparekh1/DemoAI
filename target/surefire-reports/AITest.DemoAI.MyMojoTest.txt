@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: AITest.DemoAI.MyMojoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.243 s - in AITest.DemoAI.MyMojoTest
