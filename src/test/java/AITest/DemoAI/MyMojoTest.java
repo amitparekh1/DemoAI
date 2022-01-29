@@ -27,8 +27,8 @@ public class MyMojoTest {
 	  @BeforeMethod
 	public void testInit() {
 		  //System.setProperty("webdriver.chrome.driver","src/main/resources/selenium.driver/chromedriver");
-		  WebDriver delegate = new ChromeDriver(); // declare delegate
-			 driver = SelfHealingDriver.create(delegate); // create Self-healing driver
+		//  WebDriver driver = new ChromeDriver(); // declare delegate
+			// driver = SelfHealingDriver.create(delegate); // create Self-healing driver
 		}
 	
 	
@@ -39,7 +39,7 @@ public class MyMojoTest {
 		 
 	  
 	  
-      driver=new ChromeDriver();
+      WebDriver driver=new ChromeDriver();
 	  
      
 	  driver.get("https://staging.k8s-sailor.com/dashboard/login");
