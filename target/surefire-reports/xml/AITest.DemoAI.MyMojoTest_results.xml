@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="7.426">
+           time="10.643">
     <properties></properties>
 
 
 
             <testcase
                 name="f"
-                time="7.426"
+                time="10.643"
                 classname="AITest.DemoAI.MyMojoTest">
             </testcase>
 </testsuite>
