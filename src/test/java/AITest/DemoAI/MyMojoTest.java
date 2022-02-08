@@ -8,6 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -46,6 +47,8 @@ public class MyMojoTest {
      
 	  driver.get("https://staging.k8s-sailor.com/dashboard/login");
 	  
+	  JavascriptExecutor executor = (JavascriptExecutor)driver;
+	  executor.executeScript("document.body.style.zoom = '1.5'");
 	  
 	  //re.capTest(); 
 	  Thread.sleep(500);
