@@ -50,7 +50,7 @@ public class MyMojoTest {
 	                    "webdriver.chrome.driver", "src\\main\\resources\\selenium.driver\\chromedriver.exe");
 	        } else if (isUnix()) {
 				System.setProperty(
-						"webdriver.chrome.driver", "/usr/bin/chromedriver_linux");
+						"webdriver.chrome.driver", "/usr/local/bin/chromedriver_linux");
 	        } else if (isMac()) {
 	            System.setProperty(
 	                   "webdriver.chrome.driver", "src/main/resources/selenium.driver/chromedriver_mac_latest");
