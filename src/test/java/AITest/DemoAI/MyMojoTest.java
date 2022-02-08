@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 //import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
@@ -27,6 +28,7 @@ public class MyMojoTest {
 	private static String OS = System.getProperty("os.name").toLowerCase();
     
     public WebDriver driver;
+   
 
 	public void main(String[] args) {
 
@@ -73,7 +75,14 @@ public class MyMojoTest {
   public void f() throws InterruptedException {
 	  
 	
-		 
+	  ChromeOptions options = new ChromeOptions();
+		options.addArguments("headless");
+		options.addArguments("--disable-gpu");
+		options.addArguments("disable-infobars");
+		options.addArguments("--disable-extensions");
+		options.addArguments("window-size=1200x600");
+		options.addArguments("--no-sandbox");
+		driver = new ChromeDriver(options);
 	  
 	  
       WebDriver driver=new ChromeDriver();
